@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+</head>
+<body>
+<pre><script>
+    for (let i = 0; i < 7; i++) {
+        for (let j = 0; j < 7; j++) {
+            let con1 =i+j>=1;
+            let con2 =j-i<=2;
+            let con3 =i+j>=4;
+            let con4 =j-i<=5;
+            let con5 =i<=j+3;
+            let con6 =i+j<=9;
+            if (i<=2){
+                if ((con1 && con2)||(con3 && con4)){
+                    document.write(' * ');
+                }else {
+                    document.write('   ');
+                }
+            }else {
+                if(con5 && con6){
+                    document.write(' * ');
+                }else {
+                    document.write('   ');
+                }
+            }
+        }
+        document.writeln();
+
+    }
+</script>
+</pre>
+
+
+
+</body>
+</html>
